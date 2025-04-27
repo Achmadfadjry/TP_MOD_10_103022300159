@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "TP_mod_10_103022300159.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "TP_mod_10_103022300159.Controllers.MahasiswaControlers",
+    "Method": "GetAll",
+    "RelativePath": "api/MahasiswaControlers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[TP_mod_10_103022300159.WeatherForecast, TP_mod_10_103022300159, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TP_mod_10_103022300159.Models.Mahasiswa, TP_mod_10_103022300159, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -17,7 +17,64 @@
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "TP_mod_10_103022300159.Controllers.MahasiswaControlers",
+    "Method": "AddMahasiswa",
+    "RelativePath": "api/MahasiswaControlers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newMahasiswa",
+        "Type": "TP_mod_10_103022300159.Models.Mahasiswa",
+        "IsRequired": true
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TP_mod_10_103022300159.Controllers.MahasiswaControlers",
+    "Method": "GetByIndex",
+    "RelativePath": "api/MahasiswaControlers/{index}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TP_mod_10_103022300159.Models.Mahasiswa",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TP_mod_10_103022300159.Controllers.MahasiswaControlers",
+    "Method": "DeleteMahasiswa",
+    "RelativePath": "api/MahasiswaControlers/{index}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
